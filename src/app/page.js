@@ -16,11 +16,15 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section tit="section2" desc="섹션2의 설명입니다.">
+      <Section tit="section2" desc="섹션2의 설명입니다." bg="gray">
         {/* 안에 컨텐츠 넣어야함 */}
       </Section>
 
       <Section tit="section3" desc="섹션3의 설명입니다.">
+        {/* 안에 컨텐츠 넣어야함 */}
+      </Section>
+
+      <Section tit="section4" bg="gray">
         {/* 안에 컨텐츠 넣어야함 */}
       </Section>
     </>
