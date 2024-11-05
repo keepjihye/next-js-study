@@ -1,5 +1,8 @@
+// 전체 layout 조정
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,11 +22,22 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div id="wrap">
+          {/* 헤더의 내용은 컴포넌트화해서 사용 */}
+          {/* <header id="header">header</header> */}
+          {/* 헤더 컴포넌트 */}
+          <Header />
+          <main id="container">
+            {/* children안에 page내용 넣어지게 */}
+            {children}
+          </main>
+          <Footer />
+        </div>
+
       </body>
     </html>
   );

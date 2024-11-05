@@ -1,46 +1,29 @@
+import Section from "@/components/layout/Section";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div id="wrap">
-      <header id="header">header</header>
-      <div className="into">intro</div>
-      <main id="container">
-        <section className="sec-g">
-          <div className="inner">
-            <h2 className="sec-g__tit">섹션 타이틀</h2>
-            <p className="sec-g__desc">섹션 설명</p>
-            <div className="sec-g__cont">섹션 컨텐츠</div>
-            <a href="#" className="sec-g__more">
-              섹션 더보기
-            </a>
-          </div>
-        </section>
+    <>
+      <Section tit="section1" desc="섹션1의 설명입니다.">
+        {/* 안에 컨텐츠 넣어야함 */}
+        {/* children */}
+        <div>
+          <ul>
+            <li>뉴스리스트 1</li>
+            <li>뉴스리스트 2</li>
+            <li>뉴스리스트 3</li>
+          </ul>
+        </div>
+      </Section>
 
-        <section className="sec-g">
-          <div className="inner">
-            <h2 className="sec-g__tit">섹션 타이틀</h2>
-            <p className="sec-g__desc">섹션 설명</p>
-            <div className="sec-g__cont">섹션 컨텐츠</div>
-            <a href="#" className="sec-g__more">
-              섹션 더보기
-            </a>
-          </div>
-        </section>
+      <Section tit="section2" desc="섹션2의 설명입니다.">
+        {/* 안에 컨텐츠 넣어야함 */}
+      </Section>
 
-        <section className="sec-g">
-          <div className="inner">
-            <h2 className="sec-g__tit">섹션 타이틀</h2>
-            <p className="sec-g__desc">섹션 설명</p>
-            <div className="sec-g__cont">섹션 컨텐츠</div>
-            <a href="#" className="sec-g__more">
-              섹션 더보기
-            </a>
-          </div>
-        </section>
-      </main>
-      <footer id="footer">footer</footer>
-    </div>
+      <Section tit="section3" desc="섹션3의 설명입니다.">
+        {/* 안에 컨텐츠 넣어야함 */}
+      </Section>
+    </>
   );
 
 }
